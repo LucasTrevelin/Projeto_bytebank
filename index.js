@@ -1,17 +1,22 @@
 import {Cliente} from "./Cliente.js"
 import {ContaCorrente} from "./ContaCorrente.js"
+import { ContaPoupanca } from "./ContaPoupanca.js";
+import { Conta } from "./Conta.js"; 
+import { ContaSalario } from "./ContaSalario.js";
 
 
 const cliente1 = new Cliente("Ricardo", 1112233309);  // criação de cliente1
-const cliente2 = new Cliente("Alice", 8882233309);  // criação de cliente2
 
 const contaCorrenteRicardo = new ContaCorrente(cliente1, 1001); //criação de conta corrente
-
-
-const conta2 = new ContaCorrente(cliente2, 102);
+const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
+const contaSalario = new ContaSalario(cliente1);
+contaSalario.depositar(100);
+contaSalario.sacar(100);
 
 contaCorrenteRicardo.depositar(500); // Operação dentro da conta corrente - depósito;
+contaCorrenteRicardo.sacar(100); // // Operação dentro da conta corrente - saque;
 
-contaCorrenteRicardo.transferir(200, conta2); // // Operação dentro da conta corrente - transferência (conta com funções depósito e saque, p/ mais detalhes, consultar ContaCorrente.js);
+console.log(contaSalario);
+console.log(contaCorrenteRicardo);
 
-console.log(conta2.numeroDeContas);
+
