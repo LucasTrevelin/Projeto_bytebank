@@ -15,4 +15,5 @@ Conhecimentos adquiridos através do projeto:
   <li>Métodos abstratos;</li>
   <li>Sobrescrição de métodos;</li>
   <li>Herança;</li>
-  <li>Polimorfismo;<li/>
+  <li>Polimorfismo;</li>
+ </ul>
