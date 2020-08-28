@@ -1,6 +1,13 @@
 # Projeto_ByteBank (ALURA)
 
-Projeto do byte bank - backend em <strong>node</strong> de cadastro de clientes e conta-corrente e operações financeiras;
+Projeto do byte bank - sistema em <strong>node</strong> onde é possível:
+
+<ul>
+  <li>Cadastrar Clientes e funcionários (com específicos salários e bonificação para gerentes e Diretores);</li>
+  <li>Criar e autenticar senhas para cada usuário;</li>
+  <li>Cadastrar contas (salário, poupança e corrente, com específicas taxas de saque e contagem de tipos de contas cadastradas);</li>
+  <li>Fazer transações financeiras (depositar, sacar e transferir) entre as contas cadastradas;</li>
+</ul>
 
 Conhecimentos adquiridos através do projeto:
 
